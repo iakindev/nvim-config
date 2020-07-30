@@ -54,6 +54,8 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
