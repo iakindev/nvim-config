@@ -52,6 +52,23 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
+Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+Plug 'gko/vim-coloresque'
+Plug 'dikiaap/minimalist'
+
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
+
+set t_Co=256
+syntax on
+colorscheme minimalist
+
