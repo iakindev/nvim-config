@@ -64,6 +64,7 @@ let g:airline#extensions#tabline#enabled = 1
 Plug 'gko/vim-coloresque'
 Plug 'dikiaap/minimalist'
 
+Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
