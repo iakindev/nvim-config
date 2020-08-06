@@ -64,6 +64,11 @@ let g:airline#extensions#tabline#enabled = 1
 Plug 'gko/vim-coloresque'
 Plug 'dikiaap/minimalist'
 
+Plug 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
 
@@ -72,4 +77,6 @@ call plug#end()
 set t_Co=256
 syntax on
 colorscheme minimalist
+set guicursor+=a:blinkon333
+inoremap <C-v> <C-o>"+gP
 
