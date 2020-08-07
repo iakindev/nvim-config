@@ -1,8 +1,9 @@
-call plug#begin()
+source plugins.vim
 
-Plug 'neoclide/coc.nvim', {'branch': 'release' }
+" --- coc config --- "
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-snippets', 'coc-eslint', 'coc-tslint', 'coc-lists', 'coc-highlight']
-Plug 'scrooloose/nerdtree'
+
+" --- NERDTree config --- "
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -39,9 +40,7 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
+" --- FZF config --- "
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
@@ -51,34 +50,23 @@ let g:fzf_action = {
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-
-Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs'
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" --- airline config --- "
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-Plug 'gko/vim-coloresque'
-Plug 'dikiaap/minimalist'
-
-Plug 'nathanaelkane/vim-indent-guides'
+" --- indent guides config --- "
 let g:indent_guides_enable_on_vim_startup = 1
 set ts=4 sw=4 et
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-Plug 'tpope/vim-commentary'
-Plug 'ryanoasis/vim-devicons'
 
-call plug#end()
-
+" --- other config --- "
 set t_Co=256
 syntax on
 colorscheme minimalist
 set guicursor+=a:blinkon333
+" Ctrl + v paste
 inoremap <C-v> <C-o>"+gP
+" Ctrl + tab switch tab
 nnoremap <C-Tab> :bn<CR>
