@@ -7,6 +7,8 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
+let g:NERDTreeMapOpenInTab = '<C-Enter>'
+
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
@@ -79,4 +81,4 @@ syntax on
 colorscheme minimalist
 set guicursor+=a:blinkon333
 inoremap <C-v> <C-o>"+gP
-
+nnoremap <C-Tab> :bn<CR>
