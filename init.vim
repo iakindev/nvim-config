@@ -1,4 +1,4 @@
-source plugins.vim
+source ~/.config/nvim/plugins.vim
 
 " --- coc config --- "
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-snippets', 'coc-eslint', 'coc-tslint', 'coc-lists', 'coc-highlight']
