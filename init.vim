@@ -64,6 +64,7 @@ let g:indent_guides_guide_size = 1
 set t_Co=256
 syntax on
 colorscheme minimalist
+set t_vi=
 set guicursor+=a:blinkon333
 " Ctrl + v paste
 inoremap <C-v> <C-o>"+gP
